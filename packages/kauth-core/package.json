@@ -2,12 +2,22 @@
   "name": "@kauth/core",
   "version": "1.0.0",
   "description": "The core package of the kAuth library.",
-  "main": "index.js",
-  "repository": "https://github.com/EvilKanoa/kAuth/packages/kauth-core",
+  "main": "lib/index.js",
+  "repository": "https://github.com/EvilKanoa/kAuth/tree/master/packages/kauth-core",
   "author": "Kanoa Haley <kanoa@kanoa.ca>",
   "license": "GPL-3.0",
   "private": false,
-  "dependencies": {
-    "passport": "^0.4.1"
+  "scripts": {
+    "clean": "rm -rf ./lib/*; touch ./lib/.gitkeep",
+    "build": "yarn clean; tsc --project tsconfig.json",
+    "watch": "yarn clean; tsc --project tsconfig.json --watch",
+    "dev": "yarn watch",
+    "pretest": "yarn build",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^13.9.0",
+    "typescript": "^3.8.3"
   }
 }
