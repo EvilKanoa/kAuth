@@ -1,0 +1,13 @@
+{
+  "name": "@kauth/core",
+  "version": "1.0.0",
+  "description": "The core package of the kAuth library.",
+  "main": "index.js",
+  "repository": "https://github.com/EvilKanoa/kAuth/packages/kauth-core",
+  "author": "Kanoa Haley <kanoa@kanoa.ca>",
+  "license": "GPL-3.0",
+  "private": false,
+  "dependencies": {
+    "passport": "^0.4.1"
+  }
+}
